@@ -3,6 +3,7 @@
 ## Objectives
 
 - Create a Java class with static methods.
+- Implement basic mathematical operations.
 - Implement basic character-related operations.
 - Practice using conditional statements, comparison operators, and logical operators.
 
@@ -24,10 +25,6 @@ Create a class named `MyMath`. The class must include the following static metho
 
 | Return Type | Method | Description |
 |------------|--------|-------------|
-| `double` | `add(double a, double b)` | Returns the sum of two integers. |
-| `double` | `subtract(double a, double b)` | Returns the result of subtracting the second integer from the first. |
-| `double` | `multiply(double a, double b)` | Returns the product of two integers. |
-| `double` | `divide(double a, double b)` | Returns the result of dividing the first integer by the second. The divisor `b` cannot be zero. |
 | `double` | `max(double a, double b)` | Returns the greater of two integers. |
 | `double` | `min(double a, double b)` | Returns the smaller of two integers. |
 | `boolean` | `isEven(int a)` | Returns `true` if the integer is even, `false` otherwise. |
@@ -57,10 +54,6 @@ The following tester class should be saved in a separate file named `TestMyMath.
 ```java
 public class TestMyMath {
     public static void main(String[] args) {
-        System.out.println(MyMath.add(3, 5));       // 8.0
-        System.out.println(MyMath.subtract(10, 4)); // 6.0
-        System.out.println(MyMath.multiply(3, 4));  // 12.0
-        System.out.println(MyMath.divide(8, 2));    // 4.0
         System.out.println(MyMath.max(7, 9));       // 9.0
         System.out.println(MyMath.min(7, 9));       // 7.0
         System.out.println(MyMath.isEven(10));      // true
