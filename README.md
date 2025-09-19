@@ -8,13 +8,32 @@
 
 ## Program Description
 
-The `Character` class in Java provides many static methods to work with characters.  
-In this project, you will create your own simplified utility class named `MyCharacter` that provides basic methods similar to those in Java’s `Character` class.
+A utility class in Java provides static methods that can be used across an application. The Math class in Java is an example of such a utility class, offering common mathematical functions. The `Character` class in Java provides many static methods to work with characters.
+In this project, you will create your own simplified utility classes utility class named `MyMath` and `MyCharacter` that provide basic methods similar to those in Java's `Math` and `Character` classes.
 
-These methods will help check and transform characters **without** using built-in methods from the `Character` class.
+These methods will help perform calculations, and check and transform characters **without** using built-in methods from the `Math` nor  `Character` class.
 
 ## Program Specifications
 
+### Part 1: MyMath
+Create a class named `MyMath`. The class must include the following static methods and constants:
+
+### Constants:
+- `public static final double PI = 3.141592653589793;`
+- `public static final double E = 2.718281828459045;`
+
+| Return Type | Method | Description |
+|------------|--------|-------------|
+| `double` | `add(double a, double b)` | Returns the sum of two integers. |
+| `double` | `subtract(double a, double b)` | Returns the result of subtracting the second integer from the first. |
+| `double` | `multiply(double a, double b)` | Returns the product of two integers. |
+| `double` | `divide(double a, double b)` | Returns the result of dividing the first integer by the second. The divisor `b` cannot be zero. |
+| `double` | `max(double a, double b)` | Returns the greater of two integers. |
+| `double` | `min(double a, double b)` | Returns the smaller of two integers. |
+| `boolean` | `isEven(int a)` | Returns `true` if the integer is even, `false` otherwise. |
+| `boolean` | `isOdd(int a)` | Returns `true` if the integer is odd, `false` otherwise. |
+
+### Part 1: MyCharacter
 Create a class named `MyCharacter`. The class must include the following static methods:
 
 | Return Type | Method | Description |
@@ -27,7 +46,7 @@ Create a class named `MyCharacter`. The class must include the following static 
 | `char`      | `toLowerCase(char c)` | If `c` is an uppercase letter, returns its lowercase version. Otherwise, returns `c` unchanged. |
 
 ### Notes:
-- Do **not** use the `Character` class methods in your implementation.
+- Do **not** use the `Math` nor `Character` class methods in your implementation.
 - Use comparison operators (`<`, `>`, `==`, `!=`) and conditional statements (`if`, `else`) to implement the logic.
 - ASCII values may help! (e.g., `'A'` to `'Z'` are consecutive values).
 
