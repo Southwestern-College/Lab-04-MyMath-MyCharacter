@@ -1,4 +1,4 @@
-# Lab: MyCharacter
+# Lab: MyMath and MyCharacter
 
 ## Objectives
 
