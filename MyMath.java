@@ -6,10 +6,10 @@
  */
 public class MyMath {
 
-    /** The constant PI. */
+    /** The constant PI */
     public static final double PI = 3.141592653589793;
 
-    /** The constant E. */
+    /** The constant E */
     public static final double E = 2.718281828459045;
 
     /**
