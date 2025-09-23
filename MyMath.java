@@ -13,47 +13,6 @@ public class MyMath {
     public static final double E = 2.718281828459045;
 
     /**
-     * Returns the sum of two numbers.
-     * @param a the first number
-     * @param b the second number
-     * @return the sum of a and b
-     */
-    public static double add(double a, double b) {
-        // TODO: implement this method
-    }
-
-    /**
-     * Returns the difference when the second number is subtracted from the first.
-     * @param a the first number
-     * @param b the second number
-     * @return the result of a - b
-     */
-    public static double subtract(double a, double b) {
-        // TODO: implement this method
-    }
-
-    /**
-     * Returns the product of two numbers.
-     * @param a the first number
-     * @param b the second number
-     * @return the product of a and b
-     */
-    public static double multiply(double a, double b) {
-        // TODO: implement this method
-    }
-
-    /**
-     * Returns the quotient when the first number is divided by the second.
-     * If the divisor is zero, the program should terminate.
-     * @param a the numerator
-     * @param b the denominator
-     * @return the result of a / b
-     */
-    public static double divide(double a, double b) {
-        // TODO: implement this method
-    }
-
-    /**
      * Returns the greater of two numbers.
      * @param a the first number
      * @param b the second number
