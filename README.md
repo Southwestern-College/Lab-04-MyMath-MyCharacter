@@ -82,12 +82,15 @@ public class TestMyCharacter {
 ```
 
 ## Coding Standards
-
-1. Follow the program specifications.
-2. Use meaningful variable names.
-3. Remove any auto-generated comments.
-4. Use JavaDoc to document your code.
-5. Include a program description and attribute yourself using the `@author`.
-6. Your output should be user-friendly.
-
-For documentation reference: [JavaDoc](https://en.wikipedia.org/wiki/Javadoc)
+- Follow the program specifications exactly.
+- Use meaningful identifiers and follow Java naming conventions.
+- Remove all auto-generated comments and unused code.
+- Document code using [JavaDoc](https://www.baeldung.com/javadoc), including:
+   - Program/class description
+   - Attribution using the `@author` tag.
+- Comment only when necessary.
+- Format code cleanly and consistently
+   - Proper indentation
+   - Brace alignment
+   - Whitespace for readability
+- Ensure prompts and output are clear and properly formatted.
