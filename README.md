@@ -33,7 +33,7 @@ Fields that have the `static` modifier in their declaration are called static fi
 | `boolean` | `isEven(int a)` | Returns `true` if the integer is even, `false` otherwise. |
 | `boolean` | `isOdd(int a)` | Returns `true` if the integer is odd, `false` otherwise. |
 
-### Part 1: MyCharacter
+### Part 2: MyCharacter
 1. Create a class named `MyCharacter`.
 2. The `MyCharacter` class must include the following static methods:
 
