@@ -1,4 +1,4 @@
-# Lab: MyMath and MyCharacter
+# Lab 04: MyMath and MyCharacter
 
 ## Objectives
 
