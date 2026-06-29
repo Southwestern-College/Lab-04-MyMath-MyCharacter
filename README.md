@@ -50,6 +50,7 @@ Fields that have the `static` modifier in their declaration are called static fi
 - Do **not** use the `Math` nor `Character` class methods in your implementation.
 - Use comparison operators (`<`, `>`, `==`, `!=`) and conditional statements (`if`, `else`) to implement the logic.
 - ASCII values may help! (e.g., `'A'` to `'Z'` are consecutive values).
+- Adhere to all coding standards.
 
 ## Sample Test
 
@@ -86,7 +87,6 @@ public class TestMyCharacter {
 ```
 
 ## Coding Standards
-- Follow the program specifications exactly.
 - Use meaningful identifiers and follow Java naming conventions.
 - Remove all auto-generated comments and unused code.
 - Document code using [JavaDoc](https://www.baeldung.com/javadoc), including:
