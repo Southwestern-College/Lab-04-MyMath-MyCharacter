@@ -17,11 +17,14 @@ These methods will help perform calculations, and check and transform characters
 ## Program Specifications
 
 ### Part 1: MyMath
-Create a class named `MyMath`. The class must include the following static methods and constants:
+1. Create a class named `MyMath`.
+2. The `MyMath` class must include the following static fields:
+    - `public static final double PI = 3.141592653589793;`
+    - `public static final double E = 2.718281828459045;`
+  
+Fields that have the `static` modifier in their declaration are called static fields or class variables. The `final` modifier is used to define constants meaning that the value of this field cannot change.
 
-### Constants:
-- `public static final double PI = 3.141592653589793;`
-- `public static final double E = 2.718281828459045;`
+3. The `MyMath` class must include the following static methods:
 
 | Return Type | Method | Description |
 |------------|--------|-------------|
@@ -31,7 +34,8 @@ Create a class named `MyMath`. The class must include the following static metho
 | `boolean` | `isOdd(int a)` | Returns `true` if the integer is odd, `false` otherwise. |
 
 ### Part 1: MyCharacter
-Create a class named `MyCharacter`. The class must include the following static methods:
+1. Create a class named `MyCharacter`.
+2. The `MyCharacter` class must include the following static methods:
 
 | Return Type | Method | Description |
 |-------------|--------|-------------|
@@ -42,7 +46,7 @@ Create a class named `MyCharacter`. The class must include the following static 
 | `char`      | `toUpperCase(char c)` | If `c` is a lowercase letter, returns its uppercase version. Otherwise, returns `c` unchanged. |
 | `char`      | `toLowerCase(char c)` | If `c` is an uppercase letter, returns its lowercase version. Otherwise, returns `c` unchanged. |
 
-### Notes:
+### Notes
 - Do **not** use the `Math` nor `Character` class methods in your implementation.
 - Use comparison operators (`<`, `>`, `==`, `!=`) and conditional statements (`if`, `else`) to implement the logic.
 - ASCII values may help! (e.g., `'A'` to `'Z'` are consecutive values).
