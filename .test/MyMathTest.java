@@ -1,41 +1,70 @@
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.api.Test;
 
-public class MyMathTest {
+class MyMathTest {
 
-    @Test
-    void testMax() {
-        assertEquals(3.0, MyMath.max(2, 3));
-        assertEquals(5.0, MyMath.max(5, -3));
-        assertEquals(0.0, MyMath.max(0, 0));
+    @ParameterizedTest(name = "max({0}, {1}) = {2}")
+    @CsvSource({
+        "2, 3, 3",
+        "5, -3, 5",
+        "0, 0, 0",
+        "-10, -4, -4",
+        "-7, -7, -7"
+    })
+    @DisplayName("max returns the larger value")
+    void testMax(double a, double b, double expected) {
+        assertEquals(expected, MyMath.max(a, b));
+    }
+
+    @ParameterizedTest(name = "min({0}, {1}) = {2}")
+    @CsvSource({
+        "2, 3, 2",
+        "5, -3, -3",
+        "0, 0, 0",
+        "-10, -4, -10",
+        "-7, -7, -7"
+    })
+    @DisplayName("min returns the smaller value")
+    void testMin(double a, double b, double expected) {
+        assertEquals(expected, MyMath.min(a, b));
+    }
+
+    @ParameterizedTest(name = "isEven({0}) = {1}")
+    @CsvSource({
+        "2, true",
+        "0, true",
+        "3, false",
+        "-4, true",
+        "-5, false"
+    })
+    @DisplayName("isEven identifies even integers")
+    void testIsEven(int value, boolean expected) {
+        assertEquals(expected, MyMath.isEven(value));
+    }
+
+    @ParameterizedTest(name = "isOdd({0}) = {1}")
+    @CsvSource({
+        "3, true",
+        "2, false",
+        "-5, true",
+        "0, false",
+        "-4, false"
+    })
+    @DisplayName("isOdd identifies odd integers")
+    void testIsOdd(int value, boolean expected) {
+        assertEquals(expected, MyMath.isOdd(value));
     }
 
     @Test
-    void testMin() {
-        assertEquals(2.0, MyMath.min(2, 3));
-        assertEquals(-3.0, MyMath.min(5, -3));
-        assertEquals(0.0, MyMath.min(0, 0));
-    }
-
-    @Test
-    void testIsEven() {
-        assertTrue(MyMath.isEven(2));
-        assertTrue(MyMath.isEven(0));
-        assertFalse(MyMath.isEven(3));
-        assertTrue(MyMath.isEven(-4));
-    }
-
-    @Test
-    void testIsOdd() {
-        assertTrue(MyMath.isOdd(3));
-        assertFalse(MyMath.isOdd(2));
-        assertTrue(MyMath.isOdd(-5));
-        assertFalse(MyMath.isOdd(0));
-    }
-
-    @Test
+    @DisplayName("constants match Java Math constants")
     void testConstants() {
-        assertEquals(3.141592653589793, MyMath.PI);
-        assertEquals(2.718281828459045, MyMath.E);
+        assertAll(
+                () -> assertEquals(Math.PI, MyMath.PI),
+                () -> assertEquals(Math.E, MyMath.E)
+        );
     }
 }
